@@ -20,7 +20,7 @@ class CabDriver():
         for i in range(0,m):
             for j in range(0,m):
                 if i!=j:
-                    action_space.append((i,j))        
+                    self.action_space.append((i,j))        
         self.state_space = [(i,j,k) for i in range(1,m+1) for j in range(0,t) for k in range(0,d)]
         self.state_init = self.state_space[np.random.choice(np.arange(0,len(self.state_space)))]
 
